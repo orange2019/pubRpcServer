@@ -13,7 +13,12 @@ Object.keys(methods).forEach(con => {
     if (func != 'constructor' && func[0] != '_') {
       console.log('load method method:', con + '_' + func)
       METHODS[con + '_' + func] = async (args, callback) => {
-        let ret = await funcs[func](args)
+        let ret = {
+          code: 0,
+          message: 'success',
+          data: null
+        }
+        await funcs[func](args, ret)
         console.log(ret)
         callback(null, ret)
       }

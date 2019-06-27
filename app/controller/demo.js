@@ -1,13 +1,10 @@
 const Controller = require('./../../lib/controller')
 
 class DemoController extends Controller {
-  async func(args) {
+  async func(args, ret) {
     console.log(args.uuid, args)
-    return {
-      code: 1,
-      message: 'success',
-      data: args
-    }
+    ret.data = args
+    return ret
   }
 }
 
