@@ -1,0 +1,25 @@
+{
+  "name": "pubrpcserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orange2019/pubRpcServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orange2019/pubRpcServer/issues"
+  },
+  "homepage": "https://github.com/orange2019/pubRpcServer#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect": "^3.7.0",
+    "jayson": "^3.0.2"
+  }
+}

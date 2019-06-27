@@ -1,0 +1,24 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "env": {
+    "NODE_ENV": "dev"
+  },
+  "execMap": {
+    "": "node",
+    "js": "node"
+  },
+  "watch": [
+    "app/",
+    "lib/",
+    "config/",
+    "index.js"
+  ],
+  "ignore": [
+    ".svn",
+    ".git",
+    ".idea",
+    "node_modules/"
+  ],
+  "ext": "js jade json"
+}
